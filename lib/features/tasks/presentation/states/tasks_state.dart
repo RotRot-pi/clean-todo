@@ -17,6 +17,11 @@ class TasksEmpty extends TasksState {
   TasksEmpty();
 }
 
+class TasksSearch extends TasksState {
+  final List<Task> tasks;
+  TasksSearch(this.tasks);
+}
+
 class TasksError extends TasksState {
   final Failure failure;
   TasksError(this.failure);
